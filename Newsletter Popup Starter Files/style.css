@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(./Assets/Background.png);
+  width: 100vw;
+}
+
+.container {
+  margin: 0 auto;
+  margin-top: 10%;
+  width: 33vw;
+  max-width: 888px;
+
+  height: 40%;
+  font-size: 10px;
+}
+
+.container header {
+  color: white;
+  background: url("./Assets/Pattern.png");
+  background-color: rgba(6, 39, 170, 0.844);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  height: 10em;
+  text-align: center;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.section__container {
+  width: 90%;
+}
+
+section {
+  font-size: 1.5em;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.p-top {
+  text-align: center;
+  padding: 1.3em 0;
+  line-height: 1.2em;
+}
+
+.email {
+  width: 18em;
+  /* border: 0.5em thin transparent; */
+  border-radius: 5px;
+  padding: 0.5em 0;
+  padding-left: 1.5em;
+  opacity: 0.3;
+}
+
+.btn {
+  background-color: rgba(6, 39, 170, 0.844);
+  padding: 0.5em 1em;
+  border: solid 1px transparent;
+  color: white;
+  border-radius: 8px;
+}
+
+.unsubscribe {
+  padding: 1em 0;
+}
+
+.bottom-second {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  padding: 0.5em 0;
+}
+
+.bottom {
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+/* tablet */
+@media (max-width: 1024px) {
+  .email {
+    width: 13em;
+    /* border: 0.5em thin transparent; */
+    border-radius: 5px;
+    padding: 0.5em 0;
+    padding-left: 1.5em;
+    opacity: 0.3;
+  }
+
+  .bottom {
+    margin-bottom: 1em;
+    text-align: center;
+    font-size: 0.9em;
+    line-height: 1.5em;
+  }
+}
+
+/* mobile */
+@media (max-width: 480px) {
+  .container {
+    width: 100vw;
+    height: 100vh;
+    margin-top: 0;
+  }
+
+  .container header {
+    color: white;
+    background: url("./Assets/Pattern.png");
+    background-color: rgba(6, 39, 170, 0.844);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    height: 10em;
+    text-align: center;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  .email {
+    width: 23em;
+    height: 3em;
+    /* border: 0.5em thin transparent; */
+    border-radius: 5px;
+    padding: 0.5em 0;
+    padding-left: 1.5em;
+    opacity: 0.3;
+  }
+
+  .btn {
+    height: 3em;
+    width: 9em;
+  }
+
+  section {
+    font-size: 1.5em;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  .bottom {
+    padding-bottom: 4em;
+    padding-top: 2em;
+    text-align: center;
+    font-size: 1em;
+  }
+} ;
